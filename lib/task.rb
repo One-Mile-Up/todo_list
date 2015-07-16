@@ -4,14 +4,14 @@ class Task
   def initialize(title, priority=10)
     self.title = title
     self.priority = priority
-    @state = false
+    @completed = false
   end
 
   def complete
-    @state = true
+    @completed = true
   end
 
   def complete?
-    @state
+    @completed
   end
 end
